@@ -1,0 +1,8 @@
+   1 # landmark-cut heuristic
+   2  ./fast-downward.py domain.pddl task.pddl --search "astar(lmcut())"
+   3 
+   4 # iPDB heuristic with default settings
+   5  ./fast-downward.py domain.pddl task.pddl --search "astar(ipdb())"
+   6 
+   7 # blind heuristic
+   8  ./fast-downward.py domain.pddl task.pddl --search "astar(blind())"

@@ -1,0 +1,6 @@
+/Users/qiansucheng/Desktop/blockStack/fast-downward-19.12/builds/release/CMakeFiles/rebuild_cache.dir
+/Users/qiansucheng/Desktop/blockStack/fast-downward-19.12/builds/release/CMakeFiles/edit_cache.dir
+/Users/qiansucheng/Desktop/blockStack/fast-downward-19.12/builds/release/CMakeFiles/translate.dir
+/Users/qiansucheng/Desktop/blockStack/fast-downward-19.12/builds/release/search/CMakeFiles/rebuild_cache.dir
+/Users/qiansucheng/Desktop/blockStack/fast-downward-19.12/builds/release/search/CMakeFiles/edit_cache.dir
+/Users/qiansucheng/Desktop/blockStack/fast-downward-19.12/builds/release/search/CMakeFiles/downward.dir
