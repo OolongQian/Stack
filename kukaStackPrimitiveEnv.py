@@ -64,7 +64,7 @@ class KukaStackPrimitiveEnv(gym.Env):
 		self.blockUids = {}
 		for i, color in enumerate(self.cubeColors):
 			xpos = 0.6 + 0.05 * (i - 2)  # to the left of the table
-			ypos = 0.1 + 0.12 * (i - 2)  # closer to the camera
+			ypos = 0.1 + 0.1 * (i - 2)  # closer to the camera
 			ang = 3.14 * 0.5 + 3.1415925438 * 0
 			orn = p.getQuaternionFromEuler([0, 0, ang])
 			self.blockUids[color] = p.loadURDF('./assets/cube_{}.urdf'.format(color), xpos, ypos, -0.15, orn[0], orn[1],
@@ -328,7 +328,7 @@ class KukaStackPrimitiveEnv(gym.Env):
 		# relative position
 		blk1_pos, _ = self._p.getBasePositionAndOrientation(blk1_id)
 		blk2_pos, _ = self._p.getBasePositionAndOrientation(blk2_id)
-		above = blk1_pos > blk2_pos
+		above = blk2_pos[2] > blk1_pos[2]
 		
 		# stay
 		blk1_v = self._p.getBaseVelocity(blk1_id)[0]  # get linear velocity, throw away angular velocity.
@@ -421,5 +421,5 @@ class KukaStackPrimitiveEnv(gym.Env):
 				if line.startswith(';'):
 					continue
 				plan.append(line)
-		os.system('rm sas_plan.1')
+		# os.system('rm sas_plan.1')
 		return plan

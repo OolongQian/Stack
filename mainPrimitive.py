@@ -46,7 +46,7 @@ env.generatePDDLInit('problem.pddl', goal)
 plan = env.ffPlan()
 planExecution(plan)
 
-goal = '(:goal (AND (ON white yellow) (ON green white)))'
+goal = '(:goal (AND (ON white yellow) (ON green white) (ON yellow red)))'
 env.generatePDDLInit('problem.pddl', goal)
 plan = env.ffPlan()
 planExecution(plan)
